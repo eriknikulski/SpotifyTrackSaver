@@ -1,3 +1,4 @@
+from datetime import date
 import json
 
 import spotipy
@@ -33,7 +34,7 @@ def get_spotify_songs():
 
 def main():
     results = get_spotify_songs()
-    with open("result.json", "w") as f:
+    with open(f'results/result_{date.today().strftime("%d_%m_%Y")}.json', 'w') as f:
         json.dump(results, f, indent=4)
 
 

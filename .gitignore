@@ -1,9 +1,5 @@
 .idea
-
 .cache*
-
 venv
-
 keys.py
-
-result.json
+results/*
